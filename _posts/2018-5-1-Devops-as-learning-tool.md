@@ -2,7 +2,9 @@
 layout: post
 title: Developer Driven DevOps as a Learning Tool
 ---
-A simple approach to introducing developer-driven devops
+We look at a simple pattern to introducing developer-driven devops to our team. We want our developers to have direct aaccess & ownership of infrastructure code; but we wanted to ease onboarding and minimize environment setup and maintenance.
+
+We're trying out applying a pattern of 'Docker-containers-as-build-steps' to encapsulate the environment for executing infrastructure automation scripts. Our first stab is a very quick wrapper around the GCloud and Kubectl clients; we're using the [Google cloud-builders](https://github.com/GoogleCloudPlatform/cloud-builders) for the clients.
 ---
 
 ### Background
@@ -134,6 +136,6 @@ Up will use the gcloud client to create a new cluster, if one does not already e
 -   Simple pattern for creating new instances for new environments / new projects
 -   Get used to using gcloud service accounts / managing SA keys
 
-Testramp is a useful exercise for us. This implementation is naïve; it does not do more than gcloud client with the options defined in the config. We’re using it as a first step into developer driven DevOps, putting the tools for provisioning clusters in the hands of the development team. It scripts cluster creation & maintains those scripts in version control; and treats our GKE clusters as immutable infrastructure.
+Testramp is a useful exercise for us. This implementation combines the gcloud client with an explicit set of configurations. Anyone on our team is able to modify and run the deployment scripts with a minimal amount of local environment setup. Access control is maintained by use of service accounts and Google IAM.
 
-Our next step is to evaluate more powerful tools for cluster administration. Terraform seems like a pretty good match for us. In my next post, we’ll go over what we learn.
+We’re using it as a first step into developer driven DevOps, putting the tools for provisioning clusters in the hands of the development team. Our next step is to evaluate more powerful tools for cluster administration. Terraform seems like a pretty good match for us. In my next post, we’ll go over what we learn.
