@@ -1,15 +1,10 @@
 ---
 layout: page
-title: About
+title: About [UNspecified, LLC](https://www.unspecified.life/)
 permalink: /about/
 ---
+We are a team of technical enthusiasts who deliver higher quality software throughout the development life cycle, with expertise in blockchain and machine learning technologies.
 
-Some information about you!
+### Contact Us
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+[hello@unspecified.me](mailto:hello@unspecified.me)
