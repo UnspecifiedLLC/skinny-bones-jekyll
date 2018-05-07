@@ -2,7 +2,7 @@
 layout: post
 title: Developer Driven DevOps as a Learning Tool
 ---
-We look at a simple pattern to introducing developer-driven devops to our team. We want our developers to have direct aaccess & ownership of infrastructure code; but we wanted to ease onboarding and minimize environment setup and maintenance.</br></br>We're trying out applying a pattern of 'Docker-containers-as-build-steps' to encapsulate the environment for executing infrastructure automation scripts. Our first stab is a very quick wrapper around the GCloud and Kubectl clients; we're using the [Google cloud-builders](https://github.com/GoogleCloudPlatform/cloud-builders) for the clients.
+We look at a simple pattern to introducing developer-driven devops to our team. We want our developers to have direct aaccess & ownership of infrastructure code; but we want to minimize environment setup and maintenance. We're trying out applying a pattern of 'Docker-containers-as-build-steps' to encapsulate the environment for executing infrastructure automation scripts. Our first stab is a very quick wrapper around the GCloud and Kubectl clients; we're using the [Google cloud-builders](https://github.com/GoogleCloudPlatform/cloud-builders) for the clients.
 ---
 
 ### Background
