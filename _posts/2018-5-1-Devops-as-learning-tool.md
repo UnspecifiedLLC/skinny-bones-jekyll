@@ -2,8 +2,7 @@
 layout: post
 title: Developer Driven DevOps as a Learning Tool
 ---
-
-## A simple approach to GKE clusters as immutable infrastructure
+A simple approach to introducing developer-driven devops
 ---
 
 ### Background
